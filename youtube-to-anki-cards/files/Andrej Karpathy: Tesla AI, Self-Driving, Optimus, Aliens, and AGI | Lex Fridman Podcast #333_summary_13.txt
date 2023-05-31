@@ -1,0 +1,7 @@
+The transcript discusses topics such as language models, UI/UX problems in programming, pre-print servers, peer review, imposter syndrome, advice for beginners in machine learning, and the challenges of teaching. The guest emphasizes the importance of putting in 10,000 hours of work to become an expert in a field, and advises beginners to focus on quantity rather than choice, and to compare their progress only to their past selves instead of others. The guest also discusses his interest in making humans happy and his belief that teaching is a helpful way to do so. 
+
+1. What is the 10,000 hours concept, and how does it relate to becoming an expert in a field?
+2. According to the guest, what is a better way for beginners to focus when getting into machine learning?
+3. What is Archive, and how does it work? 
+4. How does the guest feel about peer review, and how does it relate to AI and machine learning? 
+5. What does the guest love most about teaching, and why is it challenging?

@@ -1,0 +1,8 @@
+The transcript is a conversation between two people discussing teaching and artificial intelligence (AI), including topics such as preparing for lectures, the basics of AI, diffusion models, and AGI (artificial general intelligence).
+
+Questions:
+1. What is the speaker's process for creating lectures?
+2. Why does teaching strengthen the speaker's understanding of AI?
+3. What are diffusion models and why are they important?
+4. Can neural networks reason? What is the speaker's definition of reasoning?
+5. How will we know when AGI has been achieved, and what ethical questions might arise as a result?

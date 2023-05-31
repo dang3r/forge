@@ -1,0 +1,21 @@
+What is a Transformer? ; A general purpose differentiable computer that is expressive in the forward pass, optimizable via back propagation and efficient in high parallelism compute graph.
+
+What are the design criteria for a Transformer? ; To be a general-purpose computer that can be trained on arbitrary problems, to be able to express general computation through message passing, to be optimizable through back propagation and gradient descent, and to run efficiently on parallel hardware.
+
+How is message passing used in a Transformer? ; Nodes store vectors and are able to communicate with each other, broadcasting what they are looking for and what keys and values they have.
+
+What other architectural pieces besides attention are in a Transformer? ; Residual connections, layer normalizations, a multi-layer perceptron, and the way the layers are stacked.
+
+Why is it important for a neural network architecture to be optimizable? ; So that it can be trained through back propagation and gradient descent, which are simple optimization methods.
+
+Why is it important for a neural network architecture to run efficiently on hardware? ; So that it can take advantage of the massive parallelism offered by GPUs and other hardware.
+
+What are the benefits of the residual connections in a Transformer? ; They allow for uninterrupted flow of gradients during optimization and support the ability to learn short algorithms fast.
+
+How do you optimize a large, deep Transformer? ; First, optimize the first line of code, then gradually extend it to longer algorithms through the residual connections.
+
+What is a language model? ; A model that predicts the next word in a sequence of words, often trained on large amounts of text data.
+
+Why is language modeling important in AI? ; It requires the model to understand the context of the text and can lead to the development of emergent properties like in-context learning.
+
+What are the limitations of using text data alone to train an AI model? ; Text does not encompass all knowledge about the world and there are many things we do not put into text because they are obvious to humans. Other modalities like audio, video, and images are also important to train on.

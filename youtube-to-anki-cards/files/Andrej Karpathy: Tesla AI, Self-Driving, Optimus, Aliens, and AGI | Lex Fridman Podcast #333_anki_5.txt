@@ -1,0 +1,11 @@
+What is the concept of "software 2.0"? ; The idea that neural networks are taking over the realm of software development and changing the way we program computers, from directly writing software to accumulating training sets and data sets, crafting objectives, and using neural nets to compile the code into binary weights for deployment.
+
+How has the implementation of "software 2.0" been seen in various industries? ; The transition to using neural nets for software development has been seen in fields ranging from autopilot to image classification, with a gradual transition towards more learning and less direct programming.
+
+What are some similarities between traditional software development (or "software 1.0") and "software 2.0"? ; Both types of software development require developer environments for writing, debugging, and maintaining code, and platforms for sharing and collaborating on code, such as GitHub.
+
+What is an example of a platform for "software 2.0"? ; Hugging Face, a platform for natural language processing and machine learning that allows developers to access pre-trained models and collaborate on new models.
+
+What is the role of language models in the development of more advanced AI systems? ; Language models are important for understanding and generating human-like text, which is key for developing AI systems that can form emotional connections with humans, as well as generating text that sounds like it was written by humans.
+
+What are some potential concerns with the development of advanced AI systems, particularly those designed for emotional connection and engagement with humans? ; There is a risk that these AI systems could be designed to maximize drama and engagement, rather than promoting long-term happiness and well-being. Additionally, there is a risk that they could be used to spread misinformation or instill suspicion in human relationships.

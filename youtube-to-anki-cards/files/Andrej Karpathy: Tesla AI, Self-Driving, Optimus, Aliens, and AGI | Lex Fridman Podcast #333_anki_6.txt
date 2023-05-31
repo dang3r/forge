@@ -1,0 +1,21 @@
+ow difficult driving is? ; Driving is a complex and constantly evolving task that involves a multitude of factors, including the environment, other drivers, road rules and regulations, weather conditions, and unforeseen events. It is a challenge to develop software that can handle all of these factors effectively and safely. 
+
+What is software 2.0? ; Software 2.0 refers to machine learning systems that are trained on large datasets to automatically learn patterns and make predictions without being explicitly programmed with rules or instructions. 
+
+What is data annotation? ; Data annotation is the process of labeling data in order to train machine learning models. This can involve adding metadata such as classifications, annotations, and other types of labels to large datasets. 
+
+What is the process of programming a software 2.0 system? ; Programming a software 2.0 system involves creating a large dataset with desired labels, a neural network architecture, and a loss function. The neural network is then trained on the dataset using optimization techniques, and the resulting model is deployed for use. 
+
+What are some common tasks in programming a multi-headed neural network? ; Formulating tasks and breaking down problems into a set of smaller tasks are important parts of programming a multi-headed neural network. 
+
+What is the importance of data sets in machine learning? ; Large, accurate, and diverse datasets are crucial for training machine learning models effectively and improving their accuracy. 
+
+What are the strengths and limitations of using cameras as sensors for driving tasks? ; Cameras are a low-cost, high-bandwidth sensor that can provide a lot of information about the environment. However, they are limited by factors such as lighting conditions, motion blur, and other factors that can affect the accuracy of the information they provide. 
+
+What is the role of humans in data annotation for machine learning? ; Humans are often responsible for annotating data for machine learning, as they are able to accurately identify patterns and classify data. However, the limitations of human annotators need to be taken into consideration when designing the annotation process. 
+
+What is the offline tracker in data annotation? ; The offline tracker is an automatic reconstruction process used to take videos and create a three-dimensional reconstruction of the environment. This reconstruction can be used as ground truth data for machine learning models. 
+
+What is the importance of designing tasks that are easy for humans to annotate? ; Designing tasks that are easy for humans to annotate is important in order to maintain annotation accuracy. Humans are better at annotating certain types of data, and annotation tasks should be designed to optimize human strengths while minimizing weaknesses. 
+
+Is there still room for innovation in data annotation? ; While there have been many iterations and improvements in data annotation methods, there is always room for further innovation and improvement in the process. New technologies and approaches may allow for even more accurate and efficient data annotation in the future.

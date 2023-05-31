@@ -1,0 +1,8 @@
+In this transcript, Andrej Karpathy is interviewed about his time at Tesla and his thoughts on the future of AGI. He talks about why he left Tesla, how he built the computer vision team at Tesla, and his interest in revisiting it. He also discusses the potential for AGI in the form of humanoid robots, specifically the Tesla Bot. Karpathy believes that building robots with a humanoid form factor makes sense since the world is designed for humans. He is excited about the potential for using robotics to address physical labor and social robotics. Karpathy also talks about the challenges of successfully building and deploying human robots at scale and stresses the importance of generating revenue along the way. 
+
+Questions:
+1. Why did Andrej Karpathy leave Tesla and what did he work on while at the company?
+2. Why does Karpathy think that building robots with a humanoid form factor makes sense? 
+3. What challenges does Karpathy identify in building and deploying human robots at scale?
+4. What is the importance of generating revenue along the way when developing human robots?
+5. How does Karpathy believe that robots with a humanoid form factor could be used to address physical labor and social robotics?

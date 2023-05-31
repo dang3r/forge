@@ -1,0 +1,7 @@
+What is the main challenge with language models like GPT? ; How to steer the system and provide guidance for what is being looked for, audit and verify the correctness of the system, and work with it as a UI/UX problem.
+What is the potential of having iterative prompting for programming with language models? ; Multilingual programming and conversation with the systems, translating code between different languages.
+What is Archive? ; A pre-print server where papers can be uploaded and immediately accessible to everyone for reading and citation.
+What is the value of peer review in the context of machine learning? ; Community peer review on platforms like Twitter is effective due to the ease of auditing and verifying code. However, traditional peer review still has value in maintaining rigorous standards.
+How does spending 10,000 hours help with learning machine learning? ; Focusing on the amount of hours spent rather than the specific path to take to learn machine learning can help with deliberate effort and steady improvement.
+How can you measure progress when learning machine learning? ; Comparing your current skills to skills from a set time period ago, rather than comparing to others or unrealistic standards. 
+What does Andrew Ng love about teaching? ; He loves happy humans and the fact that people appreciate his teaching, but the act of teaching itself can be frustrating and difficult.

@@ -1,0 +1,6 @@
+What is the data engine in relation to neural network training? ; It is the process by which training sets are perfected for neural networks.
+What is the goal of perfecting the training sets for neural networks? ; To make sure the data sets are large, diverse, and clean.
+What is the role of humans in the data engine? ; To figure out which task to optimize in the neural network and delegate the strategy of data collection.
+What is the purpose of the data engine's perpetual improvement? ; To catch and represent rare scenarios that the neural network may struggle with.
+Why did Tesla remove radar and ultrasonic sensors from their sensor suite? ; Because they were potential liabilities and contribute noise and entropy to the data engine.
+What is the difference in importance between having a fleet and having a lidar sensor? ; Having a fleet is significantly more important than having a lidar sensor.

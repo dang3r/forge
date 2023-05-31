@@ -1,0 +1,10 @@
+What does McLean's book, "The Vital Question", argue about the origin of life? ; It argues that the basic chemistry needed for the origin of life is actually not rare and can be seen in other systems. 
+How long after the formation of Earth did primitive life arise, according to McLean's book? ; A few hundred million years. 
+What is the current belief among scientists regarding the frequency of life in the universe? ; It should be fairly common. 
+What is the most difficult jump in biological evolution, according to some biologists? ; From bacteria to more complex organisms, such as eukaryotes. 
+What is the main reason why we have not found any other intelligent life in the universe? ; Our ability to measure it and observe it is limited. 
+What makes interstellar travel so difficult? ; The interstellar medium, cosmic radiation, and the difficulty in shielding against high-speed particles. 
+What would be the first instinct for a scientist upon discovering intelligent alien life? ; To probe it and interact with it to learn more about it. 
+What is the current view on Earth's status in the universe? ; An incredibly interesting and unique story that took a long time to evolve, and it should be preserved if possible. 
+What is a possible story of the Earth's trajectory, once its computation is complete? ; It is a chemically diverse environment where complex dynamical systems can evolve and become more complex, with trends pointing towards terminating conditions, but the story is not yet fully known. 
+Why are humans often referred to as a "biological bootloader for AI"? ; Because while humans are capable of computation and have created advanced machines, they are extremely inefficient compared to computers.

@@ -1,0 +1,7 @@
+In this podcast, Andre Capothy, the former director of AI at Tesla and Open AI, discusses neural networks and their mathematical basis. He explains that neural networks are simply adjustable knobs or weights that play a role in achieving desired classification outcomes and are a simple mathematical expression. Despite this simplicity, with a large dataset, neural networks can exhibit emergent behavior that is surprising and magical. Capothy is hesitant to draw analogies to the brain and instead thinks of neural networks as complicated alien artifacts optimized differently than biological neural networks. The discussion moves to the topic of the origin of complex intelligence and the uniqueness of humans in the universe, which Capothy is hesitant to claim. He believes that there are likely many intelligent alien societies out there. 
+
+1. What is a neural network, and what is the mathematical basis of it?
+2. What are some examples of emergent behavior in neural networks?
+3. Are neural networks analogous to biological neural networks? Explain.
+4. What is Capothy's opinion on the uniqueness of humans in the universe?
+5. How does Capothy feel about the probability of intelligent alien civilizations existing in the universe?

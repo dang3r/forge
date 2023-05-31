@@ -1,0 +1,8 @@
+In this transcript, Craig Smith interviews Ilya Sutskever, co-founder and chief scientist of OpenAI and one of the primary minds behind the large language model GPT-3. They discuss Sutskever's background, including his early interest in artificial intelligence and consciousness, as well as his work with Jeff Hinton in the early 2000s on machine learning. Sutskever also discusses the development of GPT-3 and the role of transformers and self-supervised learning in its success. Additionally, he addresses concerns about the limitations of large language models, such as their lack of underlying understanding of reality and non-linguistic knowledge. 
+
+Questions:
+1. Who is Ilya Sutskever and what is his role at OpenAI?
+2. What was Sutskever's motivation for studying artificial intelligence and working with Jeff Hinton? 
+3. How did transformers and self-supervised learning contribute to the development of GPT-3?
+4. What are the limitations of large language models, according to Craig Smith's question to Sutskever?
+5. How does Sutskever's view differ from the idea that large language models only learn statistical regularities and lack understanding of non-linguistic knowledge?

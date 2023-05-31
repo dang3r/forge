@@ -1,0 +1,8 @@
+What is a neural network? ; A mathematical abstraction of the brain, a sequence of matrix multiplies with knobs that are trainable and modifiable.
+What is the purpose of a neural network? ; To find the setting of the knobs that makes the neural net do something desirable, like classify images.
+What is GPT? ; A neural network designed for next word prediction, trained on a large dataset from the internet.
+What is the optimization process used in creating artificial neural networks? ; A compression objective on a massive amount of data.
+What is the difference between artificial neural networks and biological neural networks? ; Artificial neural networks are doing compression, while biological networks are an agent in a multi-agent self-play system that has been running for a long time.
+What makes the origin of intelligence or highly complex intelligence interesting? ; It happened very quickly and relatively recently, and represents something very special that we do not fully understand.
+Do you think human-level intelligence is rare in the universe? ; It is hard to say, but the emergence of mass progress during sparse events indicates that there could be quite a few technological societies in space.
+How many intelligent alien civilizations do you think are out there, and are they similar or different to us? ; There should be quite a few, and their intelligence may be different or similar to ours, but further research is necessary to answer this question definitively.

@@ -1,0 +1,7 @@
+The transcript is a conversation between a researcher and an interviewer about his transition from history major to physics and mathematics, the discovery of the standard model in physics and the mathematics behind it, and the researcher's work on string theory. The researcher talks about his early interest in elementary particles, which drove him to physics and eventually led to his exploration of the mathematical issues arising in the standard model. He also discusses the non-linear extension of Maxwell's equations, which is the basis for the standard model, and the development of string theory, which ultimately led to a semi-realistic model of elementary particles. The researcher's original contributions include a short paper on the quantum numbers of elementary particles and a more detailed explanation of how to make a model of particle physics from string theory. Additionally, the researcher explains how his work led to a better understanding of the landscape of possibilities in string theory and the connection between the five string theories that existed at the time.
+
+1. What was the researcher's main interest as a graduate student in physics?
+2. What was the standard model of particle physics based on?
+3. What is non-linear extension of Maxwell's equations?
+4. What was the breakthrough made in August 1984?
+5. What was the researcher's contribution to particle physics from string theory during the first 6 months after the breakthrough made in August 1984?

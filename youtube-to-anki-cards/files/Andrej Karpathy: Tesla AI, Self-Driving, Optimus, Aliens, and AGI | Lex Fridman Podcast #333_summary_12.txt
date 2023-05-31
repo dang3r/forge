@@ -1,0 +1,7 @@
+In this transcript, the speaker discusses topics related to wellness, fasting, work-life balance, and computer setup. They mention using VS Code as the best IDE, and discuss the usefulness of GitHub co-pilot for programming. They mention being nervous about automation in programming causing an increase in bugs, and they discuss the possibility of the future of programming being largely automated. 
+
+1. What is the speaker's preferred computer setup? 
+2. What does the speaker think about the seemingly increasing number of programmers in the world? 
+3. What is the speaker's opinion of work-life balance and how does it relate to their work at Tesla? 
+4. What is the speaker's opinion of fasting and have they tried it themselves? 
+5. What does the speaker recommend as the best IDE for programming?

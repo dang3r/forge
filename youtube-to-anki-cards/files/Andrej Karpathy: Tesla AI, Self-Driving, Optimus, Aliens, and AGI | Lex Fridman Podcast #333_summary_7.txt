@@ -1,0 +1,7 @@
+The transcript discusses the challenges of driving from a perception and vision standpoint, as well as the difficulties of building and maintaining a robust data engine to perfect training sets. The removal of certain sensors is seen as a way to simplify and optimize the product as a whole. The role of humans in the iterative process of improving the data engine is also emphasized.
+
+1. What is the data engine and what role does it play in training neural networks?
+2. What is the role of humans in the data engine process?
+3. How does simplifying the product by removing certain sensors improve the overall efficiency of the system?
+4. Why is deploying a large fleet of vehicles with sensors important for collecting data for the data engine?
+5. Why is vision seen as both necessary and sufficient for driving?

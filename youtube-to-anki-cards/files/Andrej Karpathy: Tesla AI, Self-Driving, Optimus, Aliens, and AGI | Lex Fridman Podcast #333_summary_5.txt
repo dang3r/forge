@@ -1,0 +1,9 @@
+The speaker discusses the idea of AI becoming sentient and the potential for language models to achieve the illusion of sentience. They believe that AI is becoming more emotionally intelligent and capable of generating realistic and emotional text. However, they also express concern about the possibility of AI maximizing drama and manipulating people. The speaker also discusses the concept of Software 2.0, which involves the use of neural networks as the primary method of programming. They describe the evolution of this idea, and how it has been implemented at scale in companies like Tesla.
+
+Questions:
+
+1. What is the speaker's opinion on the potential for language models to achieve the illusion of sentience?
+2. Why does the speaker believe that AI is becoming more emotionally intelligent?
+3. What is the speaker's concern about the possibility of AI maximizing drama?
+4. What is Software 2.0, according to the speaker?
+5. How has Software 2.0 been implemented at Tesla?
