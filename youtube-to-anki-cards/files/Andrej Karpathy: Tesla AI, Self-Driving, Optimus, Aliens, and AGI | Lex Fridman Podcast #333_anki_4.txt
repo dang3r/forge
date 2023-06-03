@@ -1,0 +1,9 @@
+What is the project called where neural networks are given access to a keyboard and a mouse to interact with the internet? ; World of bits
+What was the idea behind World of bits? ; To get neural networks to complete bookings and interact with user interfaces using keyboard and mouse.
+What is the current approach to training neural networks for World of bits? ; Initializing with GPT, which is pre-trained on text.
+What is the final frontier in terms of interacting with the internet? ; Taking in pixels and giving out keyboard and mouse commands.
+What is reinforcement learning and why is it inefficient for training neural networks? ; Training neural networks from scratch using reinforcement learning is extremely inefficient because the reward signal is sparse and there are too many possible actions and observations.
+What is the status of interest in World of bits now? ; It is garnering renewed interest from companies like Adept and OpenAI.
+What is proof of personhood and why might we need it in the future? ; Proof of personhood is a solution for verifying whether an entity is human or digital. We may need it in the future when we share digital space with AI and synthetic beings.
+What is the optimism associated with proof of personhood? ; It is possible to create and implement proof of personhood, and it's not an intractable problem.
+What is the cost of creating a bot on the internet? ; It is very low, which makes it all the more critical to develop methods for detecting and verifying personhood.

@@ -1,0 +1,18 @@
+What is Anki? ; A flashcard program that helps you remember information
+What is the format of an Anki card? ; {FRONT} ; {BACK}
+What was Andrej Karpathy's role at Tesla? ; He built and managed the computer vision team
+What was the state of Tesla's computer vision team when Karpathy joined? ; There were only two people training deep neural networks
+What did Karpathy do to the computer vision team at Tesla? ; He grew it into a respectable deep learning team, built a massive compute cluster, and a good data annotation organization
+Why did Karpathy leave Tesla? ; He wanted to do more technical work and focus on AGI
+What did Karpathy consider to be his role at Tesla before leaving? ; A corporate executive role
+What did Karpathy think about working at Tesla? ; He loved the company, the team, and Elon Musk
+What did Karpathy think about the potential of AGI at Tesla? ; He thought it was going to do incredible things 
+What is the best movie sequel of all time according to Karpathy? ; Godfather Part Two
+What did Karpathy think about movies made before 1995? ; He generally did not like them
+What did Karpathy think about Optimus and the Tesla bot? ; He thought it was going to be an amazing project and take a long time to execute 
+What is a hard problem when building a robot? ; Designing a robot and getting a whole data engine and everything behind it to work
+What is the form factor that Tesla wants to invest into? ; Humanoid form factor
+What is the big exciting thing to Karpathy about Tesla doing humanoid robots? ; Integrating the robots into the data engine and mass manufacturing them to be cheap to produce at scale
+What is one of the hard problems in robotic engineering that excited Karpathy? ; Social robotics and the relationship we'll have on different levels with those robots
+What did Karpathy think about the mass production of the Tesla bot at Tesla? ; It was not that crazy and could be done relatively easily compared to other companies 
+What is the importance of making revenue along the way when developing products like the Tesla bot? ; It helps to set up the product development roadmap, makes the project economically feasible, and gives the team dopamine along the way

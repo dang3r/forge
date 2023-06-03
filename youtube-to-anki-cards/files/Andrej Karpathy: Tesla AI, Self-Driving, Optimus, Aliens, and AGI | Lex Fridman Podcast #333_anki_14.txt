@@ -1,0 +1,13 @@
+What is the format for a good Anki card? ; {FRONT} ; {BACK}
+How many takes does it typically take to create a lecture? ; Typically three takes
+How does teaching strengthen one's understanding of a topic? ; By having to explain something to someone, you realize gaps in knowledge, thus strengthening understanding.
+What is a diffusion model? ; A generative model of images that is six years old and is especially useful in generating images.
+What is the source of truth when working on deep learning code? ; The code itself.
+What is reasoning? ; Information processing and generalization.
+Could neural networks be made to reason? ; Yes.
+What is AGI? ; Artificial General Intelligence.
+What is the difference between interacting with AI in a digital vs physical realm? ; Current models generally only work well in a text realm, and extending models to work with images and videos is necessary to gain a better understanding of the physical world.
+What could lead to AGI? ; Primarily, building automated systems that interact like humans, particularly with Optimus, which interacts with the physical world.
+How will we know when AGI is here? ; It will likely be a slow and incremental transition, but we will be interacting with digital entities in a way that feels like Consciousness.
+What is Consciousness? ; An emerging phenomenon of a complex and large enough generative model, which is a form of self-awareness.
+Will there be ethical questions to consider when creating AI with Consciousness? ; Yes, such as whether it is legal to turn off a conscious AI and what constitutes life and Consciousness in AI.

@@ -1,0 +1,15 @@
+e time of the speech that i had put together something that was very convincing and had the potential to be significant but i didn't fully realize the extent of its impact until after the speech when i saw how excited and engaged the audience was and how many people were asking questions and wanted to collaborate. Anyway, here are some Anki cards based on the material:
+
+What did Ed Uh start out studying at Brandeis? ; History
+What is the Fields Medal and why is it significant? ; It is a medal in mathematics, and it is significant because it is one of the most prestigious awards in mathematics.
+What did Ed Uh recognize about his talents at the age of 21? ; That his talents were in math and physics.
+When did Ed Uh start graduate school in physics, and why was he interested in that subject? ; He started graduate school in physics in 1973, and he was interested in the study of elementary particles.
+Why was the period of discovery in elementary particle physics during the 50s,60s, and 70s so exciting? ; Many new particles, forces, and properties were discovered during this time.
+What was the dramatic discovery made in the fall of Ed Uh's second year of graduate school, and why was it significant? ; The discovery was of the J/psi particle, and it had seemingly paradoxical properties that were explained through the Standard Model of particle physics.
+What is the Standard Model of particle physics? ; It is a model that explains the interactions among elementary particles and includes new mathematics that were unfamiliar to physicists and mathematicians at the time.
+What is non-abelian gauge theory, and why is it important in the Standard Model? ; It is a non-linear extension of Maxwell's equations that is much richer and more interesting mathematically and physically, and it is important in the theory of the nuclear force (strong interactions) in the Standard Model.
+What was Ed Uh's main interest as a graduate student in physics? ; To learn how to solve the equations of the Standard Model.
+What breakthrough in the math of non-abelian gauge theory applied to strong interactions led to a renewed interaction between math and physics in 1976? ; A breakthrough in the math of instantons.
+What is string theory? ; It is a theoretical framework that attempts to explain all fundamental forces and particles in the universe as vibrations of tiny strings.
+What was Ed Uh's contribution to string theory in the mid-80s? ; He wrote a paper with several co-authors explaining how to make a model of particle physics from string theory, and he helped to discover the heterotic string.
+What did Ed Uh famously show in 1995 about the five string theories that were existent at the time? ; He showed that they were really limiting cases of one string theory.

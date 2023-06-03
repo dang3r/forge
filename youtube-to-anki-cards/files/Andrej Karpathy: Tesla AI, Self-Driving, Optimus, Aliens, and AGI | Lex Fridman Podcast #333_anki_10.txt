@@ -1,0 +1,12 @@
+What is the format of Anki cards? ; {FRONT} ; {BACK}
+What is the purpose of Anki cards? ; To help remember facts and information in a given material
+What is autopilot? ; A technology that offers increased safety and convenience while driving
+Do people like and pay for Autopilot? ; Yes, people like it and purchase it
+What is the greater mission behind Autopilot? ; Working towards greater safety and efficiency in driving
+What is the source of happiness for the team working on Autopilot? ; Deploying a product that people like, engage with, and care about
+Do all Tesla drivers like Autopilot? ; No, some people do hate the team and the project
+What is the Karma aspect to celebrating others? ; If you get excited for others, they'll get excited for you
+What is the downside to being jealous of someone else's success? ; It leads to less productivity for both you and the community as a whole
+What is the value of simulation to neural nets? ; As neural nets become more powerful, simulation will become more valuable as a training tool
+What is one example of a very few shot learning? ; GPTs can complete tasks like sentiment analysis or translation with very few examples
+Do humans have something like a pre-trained neural network? ; Yes, humans have a ton of hardware that helps with initialization, coming from evolution.

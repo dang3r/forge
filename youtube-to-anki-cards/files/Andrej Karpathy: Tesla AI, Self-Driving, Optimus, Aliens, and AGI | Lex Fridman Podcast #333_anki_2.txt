@@ -1,0 +1,7 @@
+What kind of development is synthetic intelligence considered to be? ; The next stage of development
+What does the speaker suspect synthetic AIS will eventually do? ; Uncover and solve the puzzle of the universe
+What is the book "Contact" by Carl Sagan about? ; A message to humanity encoded in the digits of Pi in base 11
+What could be the puzzle of the universe according to the speaker? ; Alerting the creator that we exist or breaking out of the system and executing arbitrary code
+What does the speaker think we should be doing to the universe's physics? ; Finding exploits and hacks to extract energy, roundings errors and taking advantage of the physics's poor implementations
+What are AGIs, based on the speaker's idea? ; Beyond comprehension and doing something completely beyond our imagination
+What is the most interesting idea in deep learning or AI in general according to the speaker? ; The transformer architecture, a general-purpose, trainable, efficient deep learning architecture for all sensory modalities

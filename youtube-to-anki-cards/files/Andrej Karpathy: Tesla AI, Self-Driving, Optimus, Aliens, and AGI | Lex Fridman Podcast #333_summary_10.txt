@@ -1,0 +1,7 @@
+In this transcript, Elon Musk discusses the value of using simulation through video games and other tools to develop neural nets for real-world application. He also discusses the importance of data sets in machine learning research and the limitations of academic research in creating large benchmark data sets. Musk sees simulation as being a valuable tool for neural net development as they become more advanced, allowing for the training of additional behaviors with fewer examples. He also notes that pre-training neural nets with a massive data set can make them more data-efficient at learning new tasks. Musk believes that humans also have a pre-existing background model for learning, coming from evolution.
+
+1. According to Musk, what is the value of using simulation for neural net development?
+2. What is the current state of research in developing large benchmark data sets?
+3. How can pre-training neural nets with a massive data set make them more data efficient?
+4. What is Musk's opinion on the limitations of simulation as a tool for human learning?
+5. Does Musk believe that humans have a pre-existing background model for learning, and where does he believe it comes from?

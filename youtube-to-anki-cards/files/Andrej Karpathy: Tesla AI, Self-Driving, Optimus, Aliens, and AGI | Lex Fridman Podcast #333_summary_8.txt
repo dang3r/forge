@@ -1,0 +1,7 @@
+The transcript is a conversation about autonomous driving and the challenges and advantages of various approaches. The speaker discusses the limitations of relying on sensors other than computer vision and the costs associated with creating and maintaining highly detailed maps. They also discuss the importance of setting ambitious goals and the difficulty of making accurate predictions when dealing with entirely new challenges. The conversation also touches on the importance of designing efficient organizations and fighting entropy, as well as the role of intuition in making progress. 
+
+1. Why does the speaker argue that relying on sensors other than computer vision is unnecessary for autonomous driving?
+2. According to the speaker, what are the benefits of setting ambitious goals rather than just improving existing systems?
+3. What does the speaker describe as the "fog of war" in the development of autonomous driving technology?
+4. How does the speaker believe a strong representation of tractability is formed in the development of autonomous driving technology?
+5. What lessons has the speaker learned about designing efficient organizations and fighting entropy while working with Elon Musk?

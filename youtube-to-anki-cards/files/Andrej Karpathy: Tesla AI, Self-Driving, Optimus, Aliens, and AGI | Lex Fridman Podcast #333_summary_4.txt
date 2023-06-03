@@ -1,0 +1,9 @@
+The transcript discusses the concept of learning common sense for neural networks and its application in training RL systems to interact with the internet. The World of Bits project explored the possibility of using a neural network with keyboard and mouse control to complete bookings and interact with user interfaces but was not successful due to the inefficiency of training. However, the interest in this kind of system has resurfaced due to the development of pre-trained models like GPT. The conversation also touches on the potential for bots on the internet and the need for a system of proof of personhood to differentiate between humans and synthetic entities. The engineers at Twitter are cautious about removing posts by bots to avoid false positives and ensure good user experience. 
+
+Possible questions:
+
+1. What was the goal of the World of Bits project, and why was it not successful?
+2. Why has interest in training neural networks with keyboard and mouse control resurfaced, and what advantages does GPT offer?
+3. What is the potential danger of bots on the internet, and how might society address this issue in the future? 
+4. How does the society's need for a system of proof of personhood relate to the problem of bots on the internet?
+5. What is the Twitter engineer's strategy for identifying and removing bots on their platform, and why is it difficult to carry out?
