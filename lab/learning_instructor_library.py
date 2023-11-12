@@ -115,7 +115,7 @@ product_requirements = Requirements(
         Requirement(id="P1", description="The system shall generate a DICOM Computer Aided Detection Structured Report (CADSR)"),
         Requirement(id="P2", description="The system shall contain findings composed of a bounding box and a score in the CADSR."),
         Requirement(id="P3", description="The system shall output a CADSR for all exams"),
-        alwayseRequirement(id="P4", description="The system shall send the DICOM CADSR to the radiologist's PACS")
+        Requirement(id="P4", description="The system shall send the DICOM CADSR to the radiologist's PACS")
     ]
 )
 
