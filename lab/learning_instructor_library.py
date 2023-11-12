@@ -178,5 +178,3 @@ df = pd.DataFrame.from_records([{"product_id": trace.source.id, "software_id": t
 print(df)
 df.to_csv("product_to_software.csv", index=False)
 
-
-
