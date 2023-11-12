@@ -5,7 +5,8 @@ from typing import Optional
 from pydantic import BaseModel, AfterValidator, BeforeValidator, ValidationError, Field, model_validator
 from typing_extensions import Annotated
 
-# Usecase 0: You want to generate a data structure using an LLM
+# Usecase 0: You want to generate a data structure using an LLM.
+# Let the llm populate  the data structure for you.
 client = instructor.patch(OpenAI())
 def valid_name(name: str) -> bool:
     if not name[0].isupper():
@@ -47,9 +48,9 @@ except ValidationError as e:
     print(e)
 
 
-#Usecase 2: If the LLM cannot populate your data-structure, give it a mechanism
-#to communicate this back to you. Wrap your model in another model that gives
-#the LLM an escape hatch
+# Usecase 2: If the LLM cannot populate your data-structure, give it a mechanism
+# to communicate this back to you. Wrap your model in another model that gives
+# the LLM an escape hatch
 class Country(BaseModel):
     name: str
     population: int
@@ -80,10 +81,8 @@ print(c)
 # GPT-4-turbo did the right thing
 c = MaybeCountry.populate("A country that has over 1 billion people and is in Europe")
 print(c)
-
 c = MaybeCountry.populate("The country of Abstenforth")
 print(c)
-
 c = MaybeCountry.populate("Unknown country")
 print(c)
 
@@ -97,7 +96,10 @@ c = MaybeCountryCOT.populate("A country that has over 1 billion people and is in
 print(c)
 
 
-# Usecase 4: I want to map one set of requirements to another. 
+# Usecase 4: I want to map one set of requirements to another.
+# There are many detector ais that compute areas of interest on a medical image. Each outputs a file containing areas
+# of interest and a score, usually a probability.
+# I want to provide two sets of requirement: high-level product and low-level software ones.
 class Requirement(BaseModel):
     id: str
     description: str
@@ -107,34 +109,35 @@ class Requirements(BaseModel):
     requirements: list[Requirement]
 
 class Trace(BaseModel):
+    chain_of_thought: str = Field(default="Step by step reasoning on how the source requirement matches the target requirement")
     source: Requirement
     target: Requirement
 
 product_requirements = Requirements(
     requirements=[
-        Requirement(id="P1", description="The system shall generate a DICOM Computer Aided Detection Structured Report (CADSR)"),
-        Requirement(id="P2", description="The system shall contain findings composed of a bounding box and a score in the CADSR."),
-        Requirement(id="P3", description="The system shall output a CADSR for all exams"),
-        Requirement(id="P4", description="The system shall send the DICOM CADSR to the radiologist's PACS")
+        Requirement(id="P1", description="The system shall generate a JSON file containg areas of interest on a medical image"),
+        Requirement(id="P2", description="The system shall generate a json file contain findings composed of a bounding box and a probability/score"),
+        Requirement(id="P3", description="The system shall generate this json file for all exams it processed."),
+        Requirement(id="P4", description="The system shall send this json file to Amazon S3")
     ]
 )
 
 software_requirements = Requirements(
     requirements=[
-        Requirement(id="S1", description="The system shall generate a DICOM Computer Aided Detection Structured Report (CADSR)"),
-        Requirement(id="S2", description="The system shall send the CADSR to the PACS via a DICOM C_STORE command"),
-        Requirement(id="S3", description="The system shall output a DICOM CADSR for all exams"),
-        Requirement(id="S4", description="The system shall output a bounding box composed of 4 coordinates for each finding in the CADSR"),
-        Requirement(id="S5", description="The system shall output a score for each in the range [0,100]"),
-        Requirement(id="S6", description="The system shall output a maximum of 2 findings per image in the CADSR"),
-        Requirement(id="S7", description="The system shall output a minimum of 0 findings per image in the CADSR"),
-        Requirement(id="S8", description="The system shall output a DICOM CADSR for exams that fail inclusion/exclusion criteria"),
-        Requirement(id="S9", description="The system shall output a DICOM CADSR for exams that pass inclusion/exclusion criteria")
+        Requirement(id="S1", description="The system shall generate a JSON file encapsulating all findings on a medical image"),
+        Requirement(id="S2", description="The system shall send the file to a configured AWS S3 Bucket"),
+        Requirement(id="S3", description="The system shall output a bounding box composed of 4 coordinates for each finding"),
+        Requirement(id="S4", description="The system shall output a score for each finding in the range [0,100]"),
+        Requirement(id="S5", description="The system shall output a maximum of 8 findings per image in the JSON file"),
+        Requirement(id="S6", description="The system shall output a minimum of 0 findings per image in the JSON file"),
+        Requirement(id="S7", description="The system shall output a JSON filefor exams that do not satisfy our input criteria"),
+        Requirement(id="S8", description="The system shall output a JSON file for exams that do satisfy our input criteria")
     ]
 )
 
 
 class Traces(BaseModel):
+    chain_of_thought: str = Field(default="Step by step reasoning on how the source requirement matches the target requirement in traces")
     product_requirements: Requirements
     software_requirements: Requirements
     traces: list[Trace]
@@ -163,8 +166,11 @@ class Traces(BaseModel):
 product_requirements_json = product_requirements.model_dump_json()
 software_requirements_json = software_requirements.model_dump_json()
 
-traces = Traces.populate(f"Map the following product requirements to software requirements. Also return the product_requirements and software_requirements too. :\nProduct Requirements:{product_requirements_json}\n Software Requirements{software_requirements_json}")
+traces = Traces.populate(f"Map the following product requirements to software requirements. Also return the product_requirements and software_requirements too. Please populate a unique reason in the chain-of_thought field for each mapping. :\nProduct Requirements:{product_requirements_json}\n Software Requirements{software_requirements_json}")
 print(traces)
+# save traces to a json file
+with open("traces.json", "w") as f:
+    f.write(traces.model_dump_json())
 
 # Generate a csv mapping the product_iq to softwar_id from traces
 import pandas as pd

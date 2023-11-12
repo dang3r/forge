@@ -109,6 +109,10 @@ def instructor_lite(model: BaseModel, image_url: str):
 sc = instructor_lite(VolparaHealthScorecard,"https://i.ibb.co/mzM7Gqz/volparahealth.png")
 print(sc)
 
+# save sc to a file
+with open("volparahealth.json", "w") as f:
+    f.write(sc.model_dump_json())
+
 # Does not work because `gpt-4-vision-preview` does not support function calling
 #client = instructor.patch(OpenAI())
 #sc = client.chat.completions.create(
