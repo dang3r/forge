@@ -1,0 +1,4 @@
+*.obj
+*.mtl
+*.ply
+*albedo*
