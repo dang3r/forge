@@ -22,16 +22,6 @@ flowchart LR
     Z --> C
 ```
 
-## Images
-
-<img src="foocus_images/malinois.png" width="200" /> <img src="foocus_images/mario.png" width="200" /> <img src="foocus_images/moose.png" width="200" /> <img src="foocus_images/tractor.png" width="200" /> <img src="foocus_images/angel.png" width="200" />
-
-## 3D Models in Blender
-
-<img src="3d_models_in_blender.png" width="800">
-
-![blender](blender_models.png)
-
 ## Usage
 
 ```bash
@@ -41,3 +31,14 @@ python3 get_images.py
 # For each PNG, run the dreamgaussian pipeline against it
 bash generate_3d_objects.sh <image_directory> <3d_model_output_directory>
 ```
+
+## Images
+
+<img src="foocus_images/malinois.png" width="200" /> <img src="foocus_images/mario.png" width="200" /> <img src="foocus_images/moose.png" width="200" />
+<img src="foocus_images/tractor.png" width="200" /> <img src="foocus_images/angel.png" width="200" /> <img src="foocus_images/teapot.png" width="200" />
+
+## 3D Models in Blender
+
+<img src="3d_models_in_blender.png" width="800">
+
+![blender](blender_models.png)
