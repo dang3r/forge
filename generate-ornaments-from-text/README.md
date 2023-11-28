@@ -24,11 +24,7 @@ flowchart LR
 
 ## Images
 
-<img src="foocus_images/malinois.png" width="200">
-<img src="foocus_images/mario.png" width="200">
-<img src="foocus_images/moose.png" width="200">
-<img src="foocus_images/tractor.png" width="200">
-<img src="foocus_images/angel.png" width="200">
+<img src="foocus_images/malinois.png" width="200" /> <img src="foocus_images/mario.png" width="200" /> <img src="foocus_images/moose.png" width="200" /> <img src="foocus_images/tractor.png" width="200" /> <img src="foocus_images/angel.png" width="200" />
 
 ## 3D Models in Blender
 
