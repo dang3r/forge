@@ -34,8 +34,8 @@ bash generate_3d_objects.sh <image_directory> <3d_model_output_directory>
 
 ## Images
 
-<img src="foocus_images/malinois.png" width="200" /> <img src="foocus_images/mario.png" width="200" /> <img src="foocus_images/moose.png" width="200" />
-<img src="foocus_images/tractor.png" width="200" /> <img src="foocus_images/angel.png" width="200" /> <img src="foocus_images/teapot.png" width="200" />
+<img src="foocus_images/malinois.png" width="300" /> <img src="foocus_images/mario.png" width="300" /> <img src="foocus_images/moose.png" width="300" />
+<img src="foocus_images/tractor.png" width="300" /> <img src="foocus_images/angel.png" width="300" /> <img src="foocus_images/teapot.png" width="300" />
 
 ## 3D Models in Blender
 
