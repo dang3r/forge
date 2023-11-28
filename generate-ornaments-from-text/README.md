@@ -2,21 +2,39 @@
 
 ## Overview
 
-This is a simple set of scripts that generates 3D models from a set of objects described in text.
+Its almost Christmas time and I wanted to make see if any of the recent AI developments could help gifts. After learning
+about dreamgaussian, I thought it would be fun to generate ornaments for the christmas tree.
 
-The basic pipeline is: text -> dalle3 -> dreamgaussian -> blender -> STL file
+This project glues together dreamgaussian, dalle3 (or other text to image models), and blender to generate 3D models.
 
-## 3D Models
+The basic pipeline is one of:
 
-![blender](blender_models.png)
+```mermaidjs
+    graph LR
+        A[image  prompt] --> B[dalle3]
+        B --> C[image]
+        C --> D[dreamgaussian]
+        D --> E[blender]
+        E --> F[STL file]
+        F --> G[3D Printer]
+
+        A[text] -->  Z[Fooocus UI]
+        Z --> C
+```
 
 ## Images
 
-<img src="images/belgian_malinois_dog.png" width="200">
-<img src="images/BMW_supercar.png" width="200">
-<img src="images/Mario_from_Super_Mario_Bros.png" width="200">
-<img src="images/white_siamese_cat.png" width="200">
-<img src="images/red_rose_with_stem.png" width="200">
+<img src="foocus_images/malinois.png" width="200">
+<img src="foocus_images/mario.png" width="200">
+<img src="foocus_images/moose.png" width="200">
+<img src="foocus_images/tractor.png" width="200">
+<img src="foocus_images/angel.png" width="200">
+
+## 3D Models in Blender
+
+<img src="3d_models_in_blender.png" width="800">
+
+![blender](blender_models.png)
 
 ## Usage
 
@@ -25,5 +43,5 @@ The basic pipeline is: text -> dalle3 -> dreamgaussian -> blender -> STL file
 python3 get_images.py
 
 # For each PNG, run the dreamgaussian pipeline against it
-bash generate_3d_objects.sh
+bash generate_3d_objects.sh <image_directory> <3d_model_output_directory>
 ```

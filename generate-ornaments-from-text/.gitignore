@@ -1,4 +1,4 @@
 *.obj
 *.mtl
 *.ply
-*albedo*
+*albedo.png
