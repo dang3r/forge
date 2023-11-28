@@ -9,17 +9,17 @@ This project glues together dreamgaussian, dalle3 (or other text to image models
 
 The basic pipeline is one of:
 
-```mermaidjs
-    graph LR
-        A[image  prompt] --> B[dalle3]
-        B --> C[image]
-        C --> D[dreamgaussian]
-        D --> E[blender]
-        E --> F[STL file]
-        F --> G[3D Printer]
+```mermaid
+flowchart LR
+    A[image  prompt] --> B[dalle3]
+    B --> C[image]
+    C --> D[dreamgaussian]
+    D --> E[blender]
+    E --> F[STL file]
+    F --> G[3D Printer]
 
-        A[text] -->  Z[Fooocus UI]
-        Z --> C
+    A[text] -->  Z[Fooocus UI]
+    Z --> C
 ```
 
 ## Images
