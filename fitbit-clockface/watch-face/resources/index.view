@@ -1,0 +1,9 @@
+<svg class="background">
+
+  <image id="sprite" width="100%" height="100%" href="images/city3.png" />
+
+  <text id="time" x="10%" y="60%" text-length="40"/>
+  <text id="hr" x="10%" y="70%" text-length="40"/>
+  <text id="calories" x="10%" y="80%" text-length="40" />
+  <text id="steps" x="10%" y="90%" text-length="40"/>
+</svg>
