@@ -1,7 +1,8 @@
 .background {
-  viewport-fill: cyan;
+  viewport-fill: black;
 }
 
-.text {
-  color: black;
+text {
+  color: white;
+  fill: white;
 }

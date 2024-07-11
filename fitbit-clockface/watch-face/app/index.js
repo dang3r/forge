@@ -16,6 +16,10 @@ import { HeartRateSensor } from "heart-rate";
 
 display.aodAllowed = true;
 
+let root = document.getElementById('root');
+const screenHeight = root.height;
+const screenWidth = root.width;
+
 const hr = document.getElementById("hr");
 let hr_text = "N/A";
 
@@ -23,9 +27,11 @@ if (HeartRateSensor) {
     const hrm = new HeartRateSensor({ frequency: 1 });
     hrm.start();
     hrm.addEventListener("reading", () => {
-        console.log(`Current heart rate: ${hrm.heartRate}`);
         hr.text = `${hrm.heartRate} bpm`;
         hr_text = `${hrm.heartRate} bpm`;
+
+        let hr_progress_el = document.getElementById("hr_progress");
+        hr_progress_el.text = animateBar(17, hrm.heartRate / 200);
     });
 }
 
@@ -40,6 +46,21 @@ const calories_el = document.getElementById("calories");
 const steps_el = document.getElementById("steps");
 const bgel = document.getElementById("sprite");
 
+// Define a function that given a percentage, animates test like [||||||     ] based on the percentage. The function
+// should take a parameter of the width of the bar, and the percentage
+function animateBar(width, percentage) {
+    let bar = "";
+    let fill = Math.floor(width * percentage);
+    for (let i = 0; i < width; i++) {
+        if (i < fill) {
+            bar += "|";
+        } else {
+            bar += " ";
+        }
+    }
+    return bar;
+}
+
 // Update the <text> element every tick with the current time
 clock.ontick = (evt) => {
     let today_dt = evt.date;
@@ -52,15 +73,31 @@ clock.ontick = (evt) => {
     let mins = zeroPad(today_dt.getMinutes());
     myLabel.text = `${hours}:${mins}`;
 
+    let today_progress_el = document.getElementById("time_progress");
+    today_progress_el.text = animateBar(17, hours * 60 + today_dt.getMinutes() / (24 * 60));
+
+    let time_pct = ((hours * 60 + today_dt.getMinutes()) / (24 * 60)).toFixed(2) * screenWidth;
+    let bike_id_el = document.getElementById("bike");
+    // set x coordinate to be the time_pct
+    bike_id_el.x = 0 + time_pct;
+
     // steps
-    let steps = (today.adjusted.steps / 1000).toFixed(1);
-    let goal_steps = (goals.steps / 1000).toFixed(1);
-    steps_el.text = `${steps}/${goal_steps}k steps`;
+    let steps = (today.adjusted.steps / 1000).toFixed(0);
+    let goal_steps = (goals.steps / 1000).toFixed(0);
+    steps_el.text = `${steps}/${goal_steps}`;
+
+    let steps_progress_el = document.getElementById("steps_progress");
+    steps_progress_el.text = animateBar(17, today.adjusted.steps / goals.steps);
 
     // calories
     let calories = (today.adjusted.calories / 1000).toFixed(1);
     let goal_calories = (goals.calories / 1000).toFixed(1);
-    calories_el.text = `${calories}/${goal_calories}k kcals`;
+    calories_el.text = `${calories}/${goal_calories}`;
+
+    let calories_progress_el = document.getElementById("calories_progress");
+    calories_progress_el.text = animateBar(17, today.adjusted.calories / goals.calories);
+
+
 
 
 
