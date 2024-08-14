@@ -64,12 +64,12 @@ clock.ontick = (evt) => {
 
     // Update the time progress bar
     let today_progress_el = document.getElementById("time_progress");
-    today_progress_el.text = animateBar(17, hours * 60 + today_dt.getMinutes() / (24 * 60));
+    today_progress_el.text = animateBar(17, (hours * 60 + today_dt.getMinutes()) / (24 * 60));
 
     // Update the bike position
     let time_pct = ((hours * 60 + today_dt.getMinutes()) / (24 * 60)).toFixed(2) * screenWidth;
     let bike_id_el = document.getElementById("bike");
-    bike_id_el.x = 0 + time_pct;
+    bike_id_el.x = 0 - 50 + time_pct;
 
     // steps
     let steps = (today.adjusted.steps / 1000).toFixed(0);
