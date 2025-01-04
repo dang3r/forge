@@ -1,10 +1,10 @@
-import sys
 from typing import List
 from enum import IntEnum, auto
 import termios
 import select
 import signal
 import atexit
+import sys
 
 
 class Register(IntEnum):
@@ -73,6 +73,7 @@ class Memory:
                 self.ram[MR.MR_KBSR] = 1 << 15
                 self.ram[MR.MR_KBDR] = ord(get_char())
             else:
+                # print("Setting to 0")
                 self.ram[MR.MR_KBSR] = 0
         return self.ram[address]
 
@@ -164,16 +165,7 @@ def update_flags(r) -> None:
 
 
 def get_char() -> str:
-    import termios, sys, tty
-
-    fd = sys.stdin.fileno()
-    old_settings = termios.tcgetattr(fd)
-    try:
-        tty.setraw(sys.stdin.fileno())
-        ch = sys.stdin.read(1)
-    finally:
-        termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
-    return ch.encode("ascii")
+    return sys.stdin.read(1).encode("ascii")
 
 
 def read_image_file(fname: str) -> None:
@@ -326,11 +318,11 @@ def main():
                 update_flags(R.R_R0)
             elif t_code == T.TRAP_OUT:
                 char = chr(REG[R.R_R0] & 0xFF)
-                print(char, end="")
+                print(char, end="", flush=True)
             elif t_code == T.TRAP_PUTS:
                 pt = REG[R.R_R0]
                 while MEM[pt]:
-                    print(chr(MEM[pt]), end="")
+                    print(chr(MEM[pt]), end="", flush=True)
                     pt += 1
             elif t_code == T.TRAP_IN:
                 char = get_char()
@@ -342,7 +334,7 @@ def main():
                 while MEM[start]:
                     left = MEM[start] >> 8
                     right = MEM[start] & 0xFF
-                    print(chr(left), end="")
+                    print(chr(left), end="", flush=True)
                     if right:
                         print(chr(right), end="")
                     start += 1
