@@ -214,7 +214,8 @@ def main():
         instr: int = MEM[REG[R.R_PC]]
         op: int = instr >> 12
 
-        # print(f"PC={REG[R.R_PC]:04x} INSTR={instr:04x} OP={op:x}")  # Add debug logging
+        print(f"PC={REG[R.R_PC]:04x} INSTR={instr:04x} OP={op:x}")  # Add debug logging
+        print(REG.r)
 
         REG[R.R_PC] += 1
 
