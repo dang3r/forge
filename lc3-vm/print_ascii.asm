@@ -1,0 +1,20 @@
+.ORIG x3000
+AND R0, R0, #0
+LD R1, ASCII_ZERO
+LD R2, COUNT
+
+LOOP    ADD R0, R1, #0
+        OUT
+        LD R0, NEWLINE
+        OUT
+        ADD R1, R1, #1
+        ADD R2, R2, #-1
+        BRzp LOOP
+
+HALT
+
+ASCII_ZERO .FILL x30
+NEWLINE    .FILL x0A
+COUNT      .FILL x002A
+
+.END

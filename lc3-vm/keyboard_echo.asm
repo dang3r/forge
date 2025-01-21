@@ -3,9 +3,11 @@
     LD R3, ASCII_ZERO   ; Load ASCII offset for '0'
 
 POLL1
+    ; The 15th-bit is set to `1` when there is KB input. Thus, condition register will be negative
+    ; We only ever set it to 0 or 1<<15, never > 0
     POLL
         LDI R0, KBSR
-        BRzp POLL
+        BRz POLL
     LDI R0, KBDR
     OUT
 BR POLL1
