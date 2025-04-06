@@ -9,5 +9,5 @@ api = MathAcademyAPI()
 api.login(email, pw)
 
 print(json.dumps(api.get_student_xp_goals("4760"), indent=4))
-knowledge_graph = api.get_student_course_knowledge_graph("4760", ["111"])
+knowledge_graph = api.get_student_course_knowledge_graph("4760", ["114"])
 generate_all_graphs(knowledge_graph)
