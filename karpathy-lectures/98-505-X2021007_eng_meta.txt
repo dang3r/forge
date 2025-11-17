@@ -1,0 +1,78 @@
+***********************************************************************************
+**	General Information
+***********************************************************************************
+
+First names in Canada, 2021 Census of Population – Rank, count and percentage by gender for first names, Canada
+
+Catalogue number: 98-505-X2021007		Release date: 2025-03-19
+
+
+
+Notes
+The data contained in this product come from the "Given name(s)" field of the 2021 Census of Population form.
+
+The first given name is the name which appears first in the full given name taken from the data source.
+
+Missing first names, those composed of a single letter, those that are entirely composed of numbers and/or special characters and those with a count less than 250 are excluded.
+
+In the source data, first names are presented in a format in which an accented letter is replaced with the unaccented version of the letter. For instance, a name registered as "François" will appear as "Francois".
+
+First names which include a hyphen are kept in full.
+
+Random rounding
+To ensure confidentiality, the values, including totals, are randomly rounded either up or down to a multiple of '5' or '10.' To understand these data, you must be aware that each individual value is rounded. As a result, when these data are summed or grouped, the total value may not match the individual values since totals and sub-totals are independently rounded. Similarly, percentages, which are calculated on rounded data, may not necessarily add up to 100%.
+
+Source: Statistics Canada, 2021 Census of Population, Catalogue no. 98-505-X2021007.
+
+How to cite: Statistics Canada. 2025. First names in Canada, 2021 Census of Population. Statistics Canada Catalogue no. 98-505-X2021007. Ottawa. Released March 19, 2025. https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/names-noms/index.cfm?Lang=E 
+
+
+***********************************************************************************
+**	Symbol
+***********************************************************************************
+
+...	not applicable
+
+
+***********************************************************************************
+**	Gender (3)
+***********************************************************************************
+
+Member
+1	Total - Gender
+2	  Men+
+3	  Women+
+
+Gender
+Gender refers to an individual's personal and social identity as a man, woman or non-binary person (a person who is not exclusively a man or a woman).
+Gender includes the following concepts:
+- gender identity, which refers to the gender that a person feels internally and individually;
+- gender expression, which refers to the way a person presents their gender, regardless of their gender identity, through body language, aesthetic choices or accessories (e.g., clothes, hairstyle and makeup), which may have traditionally been associated with a specific gender, and this, regardless of their gender identity.
+A person's gender may differ from their sex at birth, and from what is indicated on their current identification or legal documents such as their birth certificate, passport or driver's licence. A person's gender may change over time.
+Some people may not identify with a specific gender.
+Given that the non-binary population is small, data aggregation to a two-category gender variable is sometimes necessary to protect the confidentiality of responses provided. In these cases, individuals in the category "non-binary persons" are distributed into the other two gender categories and are denoted by the "+" symbol.
+"Men+" includes men (and/or boys), as well as some non-binary persons.
+"Women+" includes women (and/or girls), as well as some non-binary persons.
+For additional information, see Filling the gaps: Information on gender in the 2021 Census (https://www12.statcan.gc.ca/census-recensement/2021/ref/98-20-0001/982000012021001-eng.cfm).
+
+
+***********************************************************************************
+**	Statistics (3)
+***********************************************************************************
+
+Member
+1	Count
+2	Percentage
+3	Rank
+
+Count
+Number of times a first name was recorded from the census questionnaires, by gender.
+
+Percentage
+Percentage is equal to the count of the first name divided by the total number of all first names, for the selected gender.
+Percentages may not total 100 percent due to random rounding.
+
+Rank
+Place in a set whose elements are classified according to a determined order. A descending rank means that the count of names is ordered from highest to lowest. When two or more different names are tied with the same count for a given year of birth, the equality is preserved and the following name will jump as many ranks as equality between the previous names (e.g., 92, 92, 92, 95).
+
+
