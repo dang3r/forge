@@ -21,6 +21,9 @@ class NGramModel:
         self.size = size
         self.special_char = special_char
         self.lbl = "".join([self.special_char] * (self.size - 1))
+        self.stoi = None
+        self.itos = None
+        self.N = None
 
     def encode(self, text: str) -> int:
         return self.stoi[text]
@@ -29,19 +32,15 @@ class NGramModel:
         return self.itos[i]
 
     def corpus(self, words):
-        corp = "".join(words)
-        chars = set(corp)
+        chars = set("".join(words))
         chars.add(self.special_char)
         x_terms = sorted(set(list(product(chars, repeat=self.size - 1))))
         x_terms = ["".join(x_term) for x_term in x_terms]
         y_terms = sorted(chars)
         terms = x_terms + y_terms
-        x_dim = len(x_terms)
-        y_dim = len(y_terms)
-        all_dim = x_dim + y_dim
+        all_dim = len(x_terms) + len(y_terms)
         itos = {idx: s for idx, s in enumerate(terms)}
         stoi = {s: idx for idx, s in itos.items()}
-
         return x_terms, y_terms, all_dim, itos, stoi
 
     def train(self, words: List[str], print_graph: bool = False):
@@ -86,7 +85,7 @@ class NGramModel:
             fig.savefig("figure.png", dpi=300)
 
     def sample(self, number_samples: int = 10) -> str:
-        g = torch.Generator()  # .manual_seed(2147483647)
+        g = torch.Generator()
         P = self.N.float()
         P /= P.sum(1, keepdim=True)
         rets = []
@@ -117,6 +116,16 @@ class NGramModel:
 
 
 class NGramModelNN(NGramModel):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.W = None
+        self.all_dim = None
+        self.stoi = None
+        self.itos = None
+        self.x_dim = None
+        self.stoi_y = None
+        self.itos_y = None
+
     def encode(self, words: List[str], stoi, stoi_y):
         xs = []
         ys = []
@@ -139,6 +148,8 @@ class NGramModelNN(NGramModel):
 
         xs, ys = self.encode(words, stoi, stoi_y)
         W = torch.randn((x_dim, y_dim), requires_grad=True)
+        device = torch.device("cuda")
+        W.to(device)
 
         for epoch in range(epochs):
             print(f"Epoch {epoch}/{epochs}")
