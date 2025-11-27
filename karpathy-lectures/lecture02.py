@@ -201,14 +201,19 @@ class NGramModelNN(NGramModel):
         return rets
 
 
-def main():
+def names_dataset() -> List[str]:
     names = pd.read_csv("98-505-X2021007_eng_csv_data.csv").sort_values(
-        "GENDER_TOTAL_COUNT"
+        "GENDER_TOTAL_COUNT", ascending=False
     )
     names["names"] = names["FIRST_NAME"].astype(str)
     names["names"] = names["names"].str.lower()
+    names = names[names["names"].str.fullmatch(r"[a-z]+")]
     names.to_csv("names.csv", columns=["names"])
-    names = names["names"].tolist()
+    return names["names"].tolist()
+
+
+def main():
+    names = names_dataset()
 
     models = [
         ("ngram2", NGramModel(2, special_char="#")),
