@@ -1,0 +1,2 @@
+$:  note("<36 34 41 39>").sound("gm_acoustic_bass")
+$:  note("[72 60]*8").sound("gm_acoustic_bass").gain(0.2)
