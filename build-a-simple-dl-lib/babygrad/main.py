@@ -6,35 +6,30 @@ import babygrad.tensor as tensor
 
 
 def test_autograd():
-    T = tensor.Tensor
-    a = T(np.arange(4)).reshape((2, 2))
-    b = T(np.arange(4)).reshape((2, 2)) + 1
-    c = a @ b
-    d = c.tanh()
-    print(a)
-    print(b)
-    print(c)
-    a.requires_grad = True
-    b.requires_grad = True
-    c.requires_grad = True
-    d.requires_grad = True
-    d.backward()
-    print(b.grad)
-    print(a.grad)
+    vals = []
+    for T in [tensor.Tensor, torch.tensor]:
+        a = T(np.arange(4).astype("float32")).reshape((2, 2))
+        b = T(np.arange(4).astype("float32")).reshape((2, 2)) + 1
+        if T == torch.tensor:
+            a.requires_grad = True
+            b.requires_grad = True
+        c = a @ b
+        d = c.tanh()
+        vars = [a, b]
+        if T == torch.tensor:
+            d.backward(torch.ones_like(d))
+        else:
+            d.backward()
 
-    T = torch.Tensor
-    a = T(np.arange(4)).reshape((2, 2))
-    b = T(np.arange(4)).reshape((2, 2)) + 1
-    a.requires_grad = True
-    b.requires_grad = True
-    c = a @ b
-    d = c.tanh()
-    print(a)
-    print(b)
-    print(c)
-    d.backward(torch.ones_like(d))
-    print(b.grad)
-    print(a.grad)
+        grads = [
+            v.grad.detach().numpy()
+            #            v.grad.numpy() if hasattr(v.grad, "numpy") else v.grad.detach().numpy()
+            for v in vars
+        ]
+        vals.append(np.array(grads))
+
+    assert np.allclose(vals[0], vals[1], rtol=1e-5, atol=1e-6)
+    print("Autograd test passed!")
 
 
 def main():
