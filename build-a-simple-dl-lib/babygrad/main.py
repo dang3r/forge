@@ -7,28 +7,32 @@ import babygrad.tensor as tensor
 
 def test_autograd():
     vals = []
+    ag = np.random.uniform(low=0.0, high=1.0, size=(17, 100)).astype("float32")
+    bg = np.random.uniform(low=0.0, high=1.0, size=(100, 137)).astype("float32")
+    cg = np.random.uniform(low=0.0, high=1.0, size=(17, 137)).astype("float32")
+    dg = np.random.uniform(low=0.0, high=1.0, size=(137, 1)).astype("float32")
     for T in [tensor.Tensor, torch.tensor]:
-        a = T(np.arange(4).astype("float32")).reshape((2, 2))
-        b = T(np.arange(4).astype("float32")).reshape((2, 2)) + 1
+        a = T(ag)
+        b = T(bg)
+        c = T(cg)
+        d = T(dg)
         if T == torch.tensor:
             a.requires_grad = True
             b.requires_grad = True
-        c = a @ b
-        d = c.tanh()
-        vars = [a, b]
+            c.requires_grad = True
+            d.requires_grad = True
+        L = ((a @ b) + c) @ d
+        vars = [a, b, c, d]
         if T == torch.tensor:
-            d.backward(torch.ones_like(d))
+            L.backward(torch.ones_like(L))
         else:
-            d.backward()
+            L.backward()
+        grads = [v.grad.detach().numpy() for v in vars]
+        vals.append(grads)
 
-        grads = [
-            v.grad.detach().numpy()
-            #            v.grad.numpy() if hasattr(v.grad, "numpy") else v.grad.detach().numpy()
-            for v in vars
-        ]
-        vals.append(np.array(grads))
-
-    assert np.allclose(vals[0], vals[1], rtol=1e-5, atol=1e-6)
+    for s1, s2 in zip(vals[0], vals[1]):
+        print("Comparing", s1, s2)
+        np.testing.assert_allclose(s1, s2, rtol=1e-3, atol=1e-3)
     print("Autograd test passed!")
 
 

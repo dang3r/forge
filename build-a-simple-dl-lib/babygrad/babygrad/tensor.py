@@ -159,6 +159,16 @@ class Tensor:
 
         return Tanh()(self)
 
+    def log(self):
+        from .ops import log
+
+        return log(self)
+
+    def exp(self):
+        from .ops import exp
+
+        return exp(self)
+
     def backward(self, grad=None):
         print("Initializing bw pass...")
         topo_order = []
